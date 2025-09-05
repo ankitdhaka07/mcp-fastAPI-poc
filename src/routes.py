@@ -30,7 +30,7 @@ async def status():
     """Status endpoint that returns the current server status"""
     status_info = {
         "status": "running",
-        "server": "FastAPI MCP SSE",
+        "server": "FastAPI MCP ",
         "version": "0.1.0",
     }
     return JSONResponse(status_info)

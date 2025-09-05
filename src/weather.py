@@ -89,8 +89,8 @@ async def get_weather_forecast(latitude: float, longitude: float) -> str:
         forecasts.append(forecast)
 
     return "\n---\n".join(forecasts)
-
-
 if __name__ == "__main__":
-    # Initialize and run the server
-    mcp.run(transport="sse")
+    # This creates a working MCP HTTP server directly
+    mcp.run(transport="http", host="127.0.0.1", port=8000)
+
+
